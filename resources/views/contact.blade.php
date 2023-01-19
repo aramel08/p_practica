@@ -7,20 +7,55 @@
   <form  method="POST" action="{{route('contact')}}">
     @csrf
     
-    <label for="Label">CONTACT</label>
-    <div class="form-group">
-    <input name="fullname" class="form-control-sm" placeholder="Nombre Completo..." value="{{old('fullname')}}" ><br><br>
-    {!!$errors->first('fullname', '<small>:message</small><br>')!!}
-    <input type="text" name="email" class="form-control-sm" placeholder="Email" value="{{old('email')}}"><br><br>
+    <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="well well-sm">
+        <fieldset>
+                        <legend class="text-center header">Contact</legend>
+        <div class="form-group">
+              <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+               <div class="col-md-8">
+                <input name="fullname" class="form-control" placeholder="Nombre Completo..." value="{{old('fullname')}}" >
+                {!!$errors->first('fullname', '<small>:message</small><br>')!!}
+      </div>
+     </div>
+   
+     <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
+                            <div class="col-md-8">
+                            <input type="text" name="email" class="form-control" placeholder="Email" value="{{old('email')}}">
     {!!$errors->first('email', '<small>:message</small><br>')!!}
-    <input type="number"  class="form-control-sm" name="number" placeholder="Número" value="{{old('number')}}"><br><br>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
+                            <div class="col-md-8">
+                            <input type="number"  class="form-control" name="number" placeholder="Número" value="{{old('number')}}">
     {!!$errors->first('number', '<small>:message</small><br>')!!}
-    <textarea name="content" class="form-control-sm" placeholder="Mensaje ..." rows="">{{old('content')}}</textarea><br><br>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
+                            <div class="col-md-8">
+                                <textarea name="content" class="form-control" placeholder="Mensaje ..." rows="">{{old('content')}}</textarea>
     {!!$errors->first('content', '<small>:message</small><br>')!!}
+                            </div>
+                        </div> 
+
+   
+    
+    
+    <div class="col-md-12 text-center">
+    <button class="btn btn-primary btn-lg">Enviar</button>
+    </div>
+
+</fieldset>
 </div>
    </div>
-    <button class="btn btn-primary">Enviar</button>
-
+   </div>
+   </div>
 
   </form>
 

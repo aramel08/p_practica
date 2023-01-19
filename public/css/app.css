@@ -1,0 +1,16 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito);
+.header {
+    color: #36A0FF;
+    font-size: 27px;
+    padding: 10px;
+}
+
+.bigicon {
+    font-size: 35px;
+    color: #36A0FF;
+}
+
+.active a{
+    color:red;
+    text-decoration:none;
+}
