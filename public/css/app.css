@@ -1,16 +1,52 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito);
-.header {
-    color: #36A0FF;
-    font-size: 27px;
-    padding: 10px;
-}
 
-.bigicon {
-    font-size: 35px;
-    color: #36A0FF;
-}
 
 .active a{
     color:red;
     text-decoration:none;
+}
+
+.inicio{
+    background: url("/images/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+    background-attachment: fixed;
+}
+
+.formulario{
+    background: rgba(0,0, 0, 0.1);
+    padding: 20xp;
+    border-bottom: 10px;
+    box-shadow: 0 0 30px rgba(0,0, 0, 0.568);
+    color: white;
+}
+.form-control{
+    background: rgba(0, 0, 0, .3);
+    border-style: none;
+    transition: 0.5s ease-in;
+    outline: none;
+    box-shadow: none;
+    color: rgb(219, 224, 228);
+
+}
+.form-control:focus{
+    background: none;
+     outline: none;
+    box-shadow: none;
+}
+.form-control::placeholder{
+    color: white;
+}
+.enviar{
+    background: #007a8d;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 700!important;
+    color:white;
+    box-shadow: 0 0 30px rgba(0,0, 0, 0.568);
+    transition: 0.5s ease-in;
+}
+.enviar:hover{
+    color: white;
 }

@@ -9,12 +9,7 @@
     <script src="/js/app.js" defer></script>
     
     <title> @yield('title', 'App')</title>
-    <style>
-        .active a{
-            color:red;
-            text-decoration:none;
-        }
-    </style>
+  
 </head>
 <body>
    @include('partials.nav')
